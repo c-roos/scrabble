@@ -12,7 +12,7 @@ function calcWords(presuf, words) {
             contains.push(item);
         }
     });
-    console.log((Date.now() - t) * 1000);
+    console.log((Date.now() - t) / 1000);
     console.log(contains);
 }
 
