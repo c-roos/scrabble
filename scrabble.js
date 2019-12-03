@@ -1,3 +1,5 @@
 import { getWords } from './asyncmodule.js';
 
-console.log(getWords());
+console.log(getWords().then(function (x) {
+  return x;
+}));
