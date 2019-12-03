@@ -1,10 +1,19 @@
 import { getWords } from './asyncmodule.js';
 
 var englishWords = null;
+var contains = [];
 
 function calcWords(presuf, words) {
+    t = Date.now();
     console.log(presuf);
-    console.log(words.length);
+    //console.log(words.length);
+    words.forEach(function (item) {
+        if (item.includes(presuf)) {
+            contains.push(item);
+        }
+    });
+    console.log((Date.now() - t) * 1000);
+    console.log(contains);
 }
 
 function formHandler(e) {
