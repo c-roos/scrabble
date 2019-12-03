@@ -6,6 +6,7 @@ function calcWords(presuf, words) {
     var t = Date.now();
     console.log(words[0]);
     console.log(presuf);
+    console.log(words[0].length);
     console.log(presuf.length);
     console.log(presuf === words[0]);
     console.log(presuf == words[0]);
