@@ -9,6 +9,7 @@ function calcWords(presuf, words) {
 
 function formHandler() {
     s = document.getElementById('string').value;
+    alert(s);
     if (words == null) {
         getWords().then(function (txt) {
             words = txt.split('\n');
