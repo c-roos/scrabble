@@ -4,14 +4,14 @@ var englishWords = null;
 
 function calcWords(presuf, words) {
     console.log(presuf);
-    console.log(words);
+    console.log(words.length);
 }
 
 function formHandler(e) {
     var s = document.getElementById('string').value;
-    if (words == null) {
+    if (englishWords == null) {
         getWords().then(function (txt) {
-            words = txt.split('\n');
+            englishWords = txt.split('\n');
             calcWords(s, englishWords);
         });
     } else {
