@@ -4,8 +4,11 @@ var englishWords = null;
 
 function calcWords(presuf, words) {
     var t = Date.now();
+    console.log(words[0]);
     console.log(presuf);
     console.log(presuf.length);
+    console.log(presuf === words[0]);
+    console.log(presuf == words[0]);
     //console.log(words.length);
     var contains = [];
     words.forEach(function (item) {
