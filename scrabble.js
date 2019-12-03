@@ -8,8 +8,7 @@ function calcWords(presuf, words) {
 }
 
 function formHandler(e) {
-    s = document.getElementById('string').value;
-    alert(s);
+    var s = document.getElementById('string').value;
     if (words == null) {
         getWords().then(function (txt) {
             words = txt.split('\n');
@@ -21,11 +20,5 @@ function formHandler(e) {
     e.preventDefault();
 }
 
-alert('a');
 var myForm = document.getElementById('form');
 myForm.addEventListener('submit', formHandler);
-//myForm.addEventListener('submit', function(e) {
-//    alert(document.getElementById('string').value);
-//    e.preventDefault();
-//});
-alert('b');
