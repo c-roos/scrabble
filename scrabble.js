@@ -8,7 +8,7 @@ function calcWords(presuf, words) {
     //console.log(words.length);
     var contains = [];
     words.forEach(function (item) {
-        if (item.includes(presuf)) {
+        if (item.startsWith(presuf) || item.endsWith(presuf)) {
             contains.push(item);
         }
     });
