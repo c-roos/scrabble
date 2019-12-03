@@ -1,12 +1,12 @@
 import { getWords } from './asyncmodule.js';
 
 var englishWords = null;
-var contains = [];
 
 function calcWords(presuf, words) {
     var t = Date.now();
     console.log(presuf);
     //console.log(words.length);
+    var contains = [];
     words.forEach(function (item) {
         if (item.includes(presuf)) {
             contains.push(item);
