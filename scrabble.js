@@ -1,3 +1,3 @@
-import getWords from './asyncmodule.mjs';
+import getWords from './asyncmodule.js';
 
 console.log(getWords());
