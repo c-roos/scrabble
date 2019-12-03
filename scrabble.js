@@ -23,9 +23,9 @@ function formHandler(e) {
 
 alert('a');
 var myForm = document.getElementById('form');
-//myForm.addEventListener('submit', formHandler);
-myForm.addEventListener('submit', function (e) {
-    alert(document.getElementById('string').value);
-    e.preventDefault();
-});
+myForm.addEventListener('submit', formHandler);
+//myForm.addEventListener('submit', function(e) {
+//    alert(document.getElementById('string').value);
+//    e.preventDefault();
+//});
 alert('b');
