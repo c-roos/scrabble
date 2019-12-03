@@ -7,7 +7,7 @@ function calcWords(presuf, words) {
     console.log(words);
 }
 
-function formHandler(event) {
+function formHandler(e) {
     s = document.getElementById('string').value;
     alert(s);
     if (words == null) {
@@ -18,9 +18,14 @@ function formHandler(event) {
     } else {
         calcWords(s, englishWords);
     }
-    event.preventDefault();
+    e.preventDefault();
 }
+
 alert('a');
 var myForm = document.getElementById('form');
-myForm.addEventListener('submit', formHandler);
+//myForm.addEventListener('submit', formHandler);
+myForm.addEventListener('submit', function (e) {
+    alert(document.getElementById('string').value);
+    e.preventDefault();
+});
 alert('b');
