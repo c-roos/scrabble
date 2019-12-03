@@ -1,10 +1,20 @@
 import { getWords } from './asyncmodule.js';
 
-var words;
+var englishWords = null;
 
-getWords().then(function (value) {
-    console.log(value);
-    words = value;
-});
+function calcWords(presuf, words) {
+    console.log(presuf);
+    console.log(words);
+}
 
-console.log(words);
+function formHandler() {
+    s = document.getElementById('string').value;
+    if (words == null) {
+        getWords().then(function (txt) {
+            words = txt.split('\n');
+            calcWords(s, englishWords);
+        });
+    } else {
+        calcWords(s, englishWords);
+    }
+}
