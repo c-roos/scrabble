@@ -7,9 +7,8 @@ function calcWords(presuf, words) {
     console.log(words);
 }
 
-function formHandler() {
+function formHandler(event) {
     s = document.getElementById('string').value;
-    alert(s);
     if (words == null) {
         getWords().then(function (txt) {
             words = txt.split('\n');
@@ -18,6 +17,8 @@ function formHandler() {
     } else {
         calcWords(s, englishWords);
     }
-    alert('hi');
-    return false;
+    event.preventDefault();
 }
+
+var myForm = document.getElementById('form');
+myForm.addEventListener('submit', formHandler);
