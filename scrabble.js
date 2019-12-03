@@ -17,4 +17,6 @@ function formHandler() {
     } else {
         calcWords(s, englishWords);
     }
+
+    return false;
 }
