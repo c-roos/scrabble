@@ -33,7 +33,7 @@ var englishWords = null;
 
 function calcScore(word) {
     var score = 0;
-    for (i = 0; i < word.length; i++) {
+    for (var i = 0; i < word.length; i++) {
         score += scoreMap[word.charAt(i)];
     }
     return score;
