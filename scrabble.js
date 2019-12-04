@@ -48,8 +48,7 @@ function calcWords(presuf, words) {
         }
     });
     console.log((Date.now() - t) / 1000);
-    //console.log(contains);
-    contains.foreach(function (word) {
+    contains.forEach(function (word) {
         return console.log(word + ': ' + calcScore(word));
     });
 }
