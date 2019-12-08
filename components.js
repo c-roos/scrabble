@@ -8,7 +8,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 import { calcScore } from './utils.js';
 
-export var Word = function (_React$Component) {
+var Word = function (_React$Component) {
     _inherits(Word, _React$Component);
 
     function Word() {
@@ -33,7 +33,7 @@ export var Word = function (_React$Component) {
     return Word;
 }(React.Component);
 
-export var WordContainer = function (_React$Component2) {
+var WordContainer = function (_React$Component2) {
     _inherits(WordContainer, _React$Component2);
 
     function WordContainer(props) {
@@ -60,3 +60,5 @@ export var WordContainer = function (_React$Component2) {
 
     return WordContainer;
 }(React.Component);
+
+export { Word, WordContainer };
