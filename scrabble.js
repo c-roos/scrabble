@@ -1,8 +1,8 @@
 import { getWords, matchWords } from './utils.js';
-import { Word } from './components.js';
+import { Word, WordContainer } from './components.js';
 
 var englishWords = null;
-var r = ReactDOM.render(React.createElement(Word, null), document.getElementById('container'));
+var r = ReactDOM.render(React.createElement(WordContainer, null), document.getElementById('container'));
 
 function formHandler(e) {
     var s = document.getElementById('string').value;
