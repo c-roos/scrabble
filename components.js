@@ -52,7 +52,7 @@ var WordContainer = function (_React$Component2) {
                 'div',
                 null,
                 this.state.words.map(function (w) {
-                    return React.createElement(Word, { word: w, score: w.calcScore });
+                    return React.createElement(Word, { word: w, score: calcScore(w) });
                 })
             );
         }
