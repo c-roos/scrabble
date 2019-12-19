@@ -1,4 +1,4 @@
-import { test, getWords, matchWords } from './utils.js';
+import { getWords, matchWords } from './utils.js';
 import { Word, WordContainer } from './components.js';
 
 test();
@@ -6,8 +6,7 @@ var englishWords = null;
 var r = ReactDOM.render(React.createElement(WordContainer, null), document.getElementById('reactContainer'));
 
 function formHandler(e) {
-    var s = document.getElementById('string').value;
-    alert(s);
+    var s = document.getElementById('string').value.toLowerCase();
     if (englishWords == null) {
         getWords().then(function (txt) {
             englishWords = txt.split('\r\n');
@@ -16,7 +15,6 @@ function formHandler(e) {
     } else {
         r.setState({ words: matchWords(s, englishWords) });
     }
-    alert(s);
     e.preventDefault();
 }
 
