@@ -26,12 +26,20 @@ var Word = function (_React$Component) {
                 React.createElement(
                     "div",
                     { className: "card-header" },
-                    this.props.word
+                    React.createElement(
+                        "small",
+                        null,
+                        this.props.word
+                    )
                 ),
                 React.createElement(
                     "div",
                     { className: "card-body" },
-                    this.props.score
+                    React.createElement(
+                        "h5",
+                        { className: "card-title" },
+                        this.props.score
+                    )
                 )
             );
         }
