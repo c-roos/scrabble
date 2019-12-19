@@ -7,6 +7,7 @@ var r = ReactDOM.render(React.createElement(WordContainer, null), document.getEl
 
 function formHandler(e) {
     var s = document.getElementById('string').value;
+    alert(s);
     if (englishWords == null) {
         getWords().then(function (txt) {
             englishWords = txt.split('\r\n');
@@ -15,6 +16,7 @@ function formHandler(e) {
     } else {
         r.setState({ words: matchWords(s, englishWords) });
     }
+    alert(s);
     e.preventDefault();
 }
 
