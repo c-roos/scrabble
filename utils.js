@@ -53,5 +53,9 @@ function matchWords(presuf, words) {
     return contains;
 }
 
+function test() {
+    alert('test');
+}
 
-export { getWords, calcScore, matchWords };
+
+export { test, getWords, calcScore, matchWords };
