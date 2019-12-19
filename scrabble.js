@@ -1,7 +1,6 @@
 import { getWords, matchWords } from './utils.js';
 import { Word, WordContainer } from './components.js';
 
-test();
 var englishWords = null;
 var r = ReactDOM.render(React.createElement(WordContainer, null), document.getElementById('reactContainer'));
 
