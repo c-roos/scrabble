@@ -22,10 +22,17 @@ var Word = function (_React$Component) {
         value: function render() {
             return React.createElement(
                 "div",
-                { className: "card" },
-                this.props.word,
-                ": ",
-                this.props.score
+                { className: "card border-info mb-3 ml-1 mr-1" },
+                React.createElement(
+                    "div",
+                    { className: "card-header" },
+                    this.props.word
+                ),
+                React.createElement(
+                    "div",
+                    { className: "card-body" },
+                    this.props.score
+                )
             );
         }
     }]);
