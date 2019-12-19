@@ -18,13 +18,13 @@ var Word = function (_React$Component) {
     }
 
     _createClass(Word, [{
-        key: 'render',
+        key: "render",
         value: function render() {
             return React.createElement(
-                'div',
-                null,
+                "div",
+                { className: "card" },
                 this.props.word,
-                ': ',
+                ": ",
                 this.props.score
             );
         }
@@ -46,10 +46,10 @@ var WordContainer = function (_React$Component2) {
     }
 
     _createClass(WordContainer, [{
-        key: 'render',
+        key: "render",
         value: function render() {
             return React.createElement(
-                'div',
+                "div",
                 null,
                 this.state.words.map(function (w) {
                     return React.createElement(Word, { word: w, score: calcScore(w) });
