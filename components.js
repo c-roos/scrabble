@@ -38,7 +38,8 @@ var Word = function (_React$Component) {
                     React.createElement(
                         "h5",
                         { className: "card-title" },
-                        this.props.score
+                        this.props.score,
+                        " points"
                     )
                 )
             );
@@ -67,7 +68,7 @@ var WordContainer = function (_React$Component2) {
                 "div",
                 null,
                 this.state.words.map(function (w) {
-                    return React.createElement(Word, { word: w, score: calcScore(w) });
+                    return React.createElement(Word, { word: w, key: w, score: calcScore(w) });
                 })
             );
         }
